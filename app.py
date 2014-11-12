@@ -15,7 +15,7 @@ def foo():
 def index():
     routes = [key for key in app.url_map._rules_by_endpoint if key != 'static']
 
-    sources = [inspect.getsource(getattr(sys.modules[__name__], method)) for method in routes]
+    sources = [inspect.getsource(getattr(sys.modules[__name__], r)) for r in routes]
     highlights = [highlight(s, PythonLexer(), HtmlFormatter(noclasses=True)) for s in sources]
 
     return render_template('index.html', routes=highlights)

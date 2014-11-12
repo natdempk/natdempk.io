@@ -75,7 +75,7 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    /*border-bottom: 20px solid #e44d26;*/
 }
 
 .footer-container,
@@ -112,7 +112,7 @@ nav a {
     font-weight: bold;
 
     color: white;
-    background: #e44d26;
+    /*background: #e44d26;*/
 }
 
 nav a:hover,
@@ -158,8 +158,19 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+h1.title {
+    font-family: Menlo, Monospace;
+    /*vertical-align: middle;*/
+    line-height: normal;
+}
 
+.main-container {
+    background: #000000;
+}
 
+article {
+    padding: 15px;
+}
 
 
 
@@ -184,7 +195,7 @@ nav a:hover {
 
     nav a {
         float: left;
-        width: 27%;
+        width: 15%;
         margin: 0 1.7%;
         padding: 25px 2%;
         margin-bottom: 0;
@@ -234,7 +245,7 @@ nav a:hover {
 
     nav {
         float: right;
-        width: 38%;
+        width: 26%;
     }
 
 /* ============
@@ -243,7 +254,8 @@ nav a:hover {
 
     .main article {
         float: left;
-        width: 57%;
+        /*width: 57%;*/
+        background: rgba(255, 255, 255, 0.7);
     }
 
     .main aside {
